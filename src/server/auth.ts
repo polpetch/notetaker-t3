@@ -7,7 +7,7 @@ import {
   type DefaultSession,
   type NextAuthOptions,
 } from "next-auth";
-import GITHUBProvider from "next-auth/providers/GITHUB";
+import GITHUBProvider from "next-auth/providers/github";
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
@@ -28,7 +28,7 @@ declare module "next-auth" {
   //   // ...other properties
   //   // role: UserRole;
   // }
-} 
+}
 
 /**
  * Options for NextAuth.js used to configure adapters, providers, callbacks, etc.
